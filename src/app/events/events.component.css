@@ -1,0 +1,58 @@
+form {
+ margin-bottom: 40px;
+}
+
+.events-col {
+ float: left;
+ width: 300px;
+ padding-right: 15px;
+ padding-left: 15px;
+}
+
+.hour-zone {
+ height: 60px;
+ padding-left: 5px;
+ font-size: 16px;
+ color: #bbb;
+}
+
+.hour-zone:nth-child(odd) {
+ border-top: 1px solid #ccc;
+}
+
+.hour-zone:nth-child(even) .hour-label {
+ padding-left: 4px;
+ font-size: 12px;
+}
+
+.events-wrapper {
+ position: relative;
+}
+
+.event {
+ position: absolute;
+ overflow: hidden;
+ /* width: 225px; */
+ padding-left: 5px;
+ font-size: 14px;
+ border-left: 3px solid #6E9ECF;
+ background-color: #E2ECF5;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+}
+
+.close-event {
+ position: absolute;
+ top: 0;
+ right: 3px;
+ display: none;
+ cursor: pointer;
+}
+
+.event:hover .close-event {
+ display: inline;
+}
+
+input.ng-dirty.ng-invalid {
+	border: 1px solid red;
+}
